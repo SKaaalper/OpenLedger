@@ -15,13 +15,15 @@ purple_echo() {
 # Відображення логотипу
 # ==========================================
 purple_echo "Відображення логотипу..."
+
 curl -s https://raw.githubusercontent.com/abzalliance/logo/main/logo.sh -o logo.sh
 
 if [ -f logo.sh ]; then
     chmod +x logo.sh
+    # Запускаємо logo.sh
     bash logo.sh
     # Пауза в 2 секунди
-    sleep 2
+    sleep 6
     rm logo.sh
 else
     purple_echo "Не вдалося завантажити логотип."
