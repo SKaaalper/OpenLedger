@@ -1,15 +1,18 @@
 #!/bin/bash
 
-# Відображення логотипу
-echo "Відображення логотипу..."
-curl -s https://raw.githubusercontent.com/abzalliance/logo/main/logo.sh -o logo.sh
+function printDelimiter {
+  echo "==========================================="
+}
 
-if [ -f logo.sh ]; then
-    bash logo.sh
-    rm logo.sh
-else
-    echo "Не вдалося завантажити логотип."
-fi
+function printPurple {
+  echo -e "\e[1m\e[32m${1}\e[0m"
+}
+
+function printLogo {
+  bash <(curl -s "https://raw.githubusercontent.com/abzalliance/logo/main/logo.sh")
+}
+
+printLogo
 
 # Оновлення списку пакетів
 echo "Оновлення списку пакетів..."
