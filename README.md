@@ -4,7 +4,7 @@
 # Open VPS Ubuntu Termianel & Past Command (For VPS Download [MobaXterm](https://mobaxterm.mobatek.net/))
 
 ```
-source <(wget -qO- https://raw.githubusercontent.com/abzalliance/OpenLedger/main/install.sh)
+source <(wget -qO- https://raw.githubusercontent.com/SKaaalper/OpenLedger/main/install.sh)
 ```
 
 ## Additional Manual Steps
